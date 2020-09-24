@@ -20,9 +20,6 @@
 		<!-- bootstrap - link cdn -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	
-		<script>
-			// código javascript						
-		</script>
 	</head>
 
 	<body>
@@ -95,6 +92,27 @@
 	    </div>
 	
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+		<script>
+			//verificar se os campos de usuários e senhas foram devidamente preenchidos
+
+			let btnLogin = document.querySelector('#btn_login')
+			let campoUsuario = document.querySelector('#campo_usuario')
+			let campoSenha = document.querySelector('#campo_senha')
+
+			btnLogin.addEventListener('click', function(){
+				
+
+				if(campoUsuario.value == ''){
+					alert('digite o usuario')
+				};
+
+				if(campoSenha.value == ''){
+					alert('digite a senha')
+				};
+
+			});		
+		</script>
 	
 	</body>
 </html>
