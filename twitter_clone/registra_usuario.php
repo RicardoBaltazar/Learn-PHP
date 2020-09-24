@@ -6,7 +6,8 @@
     '<br>';
     $email =  $_POST['email'];
     echo '<br>';
-    $senha = $_POST['senha'];
+    //md5 criptografia para a senha
+    $senha = md5($_POST['senha']);
     echo '<br>';
 
 

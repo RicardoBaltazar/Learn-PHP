@@ -8,7 +8,9 @@
 
 
     $usuario = $_POST['usuario'];
-    $senha = $_POST['senha'];
+
+    //criptografar a entrada tbm para ficar igual a que foic riptografada no bd
+    $senha = md5($_POST['senha']);
 
 
     //cuidar sempre a operação lógica AND ou OR
