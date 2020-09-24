@@ -19,10 +19,16 @@
     if($resultado_id){
         $dados_usuario = mysqli_fetch_array($resultado_id);
     
-        var_dump($dados_usuario);
+        if(isset($dados_usuario['usuario'])){
+            echo 'usuário existe';
+        } else {
+            //echo 'erro na consulta';
+            //chamar uma função para redirecionar para alguma página
+            header('location: index.php?erro=1');
+        }
 
     } else {
-        echo 'erro na consulta';
+        
     }
 
     //update
