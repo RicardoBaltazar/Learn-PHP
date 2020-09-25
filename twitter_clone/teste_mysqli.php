@@ -20,6 +20,8 @@
         foreach($dados_usuario as $usuario){
             var_dump($usuario);
             echo '<br><br>';
+            var_dump($usuario['email']);
+            echo '<br><br>';
         };
 
     } else {
