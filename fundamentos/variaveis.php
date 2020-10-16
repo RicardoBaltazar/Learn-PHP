@@ -29,7 +29,6 @@ echo $nome.' '.$number.' '.$float.' '.$boolean.' '.$frutas[0];
 '<br>';
 var_dump($nome).' '.var_dump($number).' '.var_dump($float).' '.var_dump($boolean).var_dump($frutas).var_dump($arquivo).var_dump($nulo);
 
-exit;
 
 $nome = 'nome';
 unset($nome);
@@ -37,6 +36,8 @@ unset($nome);
 if(isset($nome)){
     echo $nome;
 }
+
+
 
 
 ?>
